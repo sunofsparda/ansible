@@ -1,0 +1,7 @@
+- src: geerlingguy.pip
+- src: geerlingguy.java
+- src: geerlingguy.docker
+- src: geerlingguy.repo-epel
+- src: nickjj.user
+- src: oefenweb.pip
+- src: viasite-ansible.zsh

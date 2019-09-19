@@ -1,0 +1,9 @@
+- name: Provision
+  hosts: workbox
+  roles:
+    - role: geerlingguy.pip
+    - role: geerlingguy.docker
+      become: yes
+    - role: geerlingguy.java
+      become: yes
+    - role: viasite-ansible.zsh
