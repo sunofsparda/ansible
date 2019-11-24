@@ -1,5 +1,5 @@
 - name: Provision
-  hosts: workbox
+  hosts: workspace
   roles:
     - role: geerlingguy.pip
     - role: geerlingguy.docker
