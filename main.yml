@@ -1,9 +1,11 @@
 - name: Provision
   hosts: workspace
   roles:
+    - role: nickjj.user
     - role: geerlingguy.pip
     - role: geerlingguy.docker
       become: yes
     - role: geerlingguy.java
       become: yes
-    - role: viasite-ansible.zsh
+    - { role: viasite-ansible.zsh }
+    - role: ferrarimarco.xfce

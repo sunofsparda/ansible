@@ -8,7 +8,7 @@ docker run --rm -it -v $(pwd):/ansible -v $(pwd)/roles/:/root/.ansible/roles/ --
 
 ### Run
 docker run --rm -it -v $(pwd):/ansible acherlyonok/ansible:latest -i /ansible/inventories/hosts.yml /ansible/main.yml -vv
-docker run --rm -it -v $HOME/.ssh/:/root/.ssh/:ro -v $(pwd):/ansible acherlyonok/ansible:latest -i /ansible/hosts.yml /ansible/main.yml -vv
+docker run --rm -it -v $HOME/.ssh/:/root/.ssh/:ro -v $(pwd):/ansible acherlyonok/ansible:latest -i /ansible/inventories/hosts.yml /ansible/main.yml -vv
 docker run --rm -it -v /mnt/host_home/.ssh/:/root/.ssh/:ro -v $(pwd):/ansible acherlyonok/ansible:latest -i /ansible/inventories/hosts.yml /ansible/main.yml -vv
 
 ### Debug
