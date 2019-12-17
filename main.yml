@@ -1,11 +1,13 @@
 - name: Provision
-  hosts: workspace
+  hosts: workbox
   roles:
     - role: nickjj.user
-    - role: geerlingguy.pip
+      become: yes
+    # install pip in pyenv
+    # - role: geerlingguy.pip
     - role: geerlingguy.docker
       become: yes
     - role: geerlingguy.java
       become: yes
-    - { role: viasite-ansible.zsh }
-    - role: ferrarimarco.xfce
+    - role: viasite-ansible.zsh
+      become: yes
